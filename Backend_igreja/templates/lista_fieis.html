@@ -1,0 +1,10 @@
+
+{% for fiel in fieis %}
+    
+    <p>Nome: {{ fiel.nome }}</p>
+    <p>Idade: {{ fiel.idade }}</p>
+    <p>Localidade: {{ fiel.localidade }}</p>
+    <p>Foi à igreja no mês: {% if fiel.foi_a_igreja %}Sim{% else %}Não{% endif %}</p>
+    <hr>
+
+{% endfor %}
